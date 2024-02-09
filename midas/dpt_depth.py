@@ -89,7 +89,7 @@ class DPT(BaseModel):
         elif "swin" in backbone:
             self.forward_transformer = forward_swin
         elif "next_vit" in backbone:
-            from .backbones.next_vit import forward_next_vit
+            from backbones.next_vit import forward_next_vit
             self.forward_transformer = forward_next_vit
         elif "levit" in backbone:
             self.forward_transformer = forward_levit
